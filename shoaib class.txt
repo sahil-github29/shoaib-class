@@ -1,0 +1,15 @@
+echo "# shoaib-class" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/sahil-github29/shoaib-class.git
+git push -u origin master
+
+git remote add origin https://github.com/sahil-github29/shoaib-class.git
+git push -u origin master
+
+github password
+
+username : shoaib-github
+password : shoaib
+email : shohaibkhan1@gmail.com
