@@ -14,3 +14,9 @@ while(gotName == 35) {
     gotName = false;
   }
 }
+
+function sumOfCubes(a , b) {
+  return a*a*a + b*b*b;
+}
+
+console.log(sumOfCubes(5, 5));
