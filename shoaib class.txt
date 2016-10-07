@@ -11,5 +11,5 @@ git push -u origin master
 github password
 
 username : shoaib-github
-password : shoaib
+password : shoaib432
 email : shohaibkhan1@gmail.com
