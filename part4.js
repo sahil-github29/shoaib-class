@@ -1,4 +1,4 @@
-function eCount() {
+function CountE() {
   var phrase = prompt("which phrase would you like to ex");
   if (typeof(phrase) != "string") {
     alert("that's not valid entry!");
@@ -20,11 +20,3 @@ return true;
 
 
 }
-
-/*function eCount(){
-  var phrase = prompt("which phrase would you like to ex");
-  if (typeof(phrase) != "string") {
-    alert("that's not valid entry!");
-  }
-}*/
-eCount();
