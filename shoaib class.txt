@@ -13,3 +13,6 @@ github password
 username : shoaib-github
 password : shoaib432
 email : shohaibkhan1@gmail.com
+
+
+1. Please commit your changes or stash them before you merge.
