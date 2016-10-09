@@ -34,4 +34,67 @@ BooksBox:{
 //myBox.Books[0] = "MongoDB";
 //myBox.shipped = "success";
 
-console.log(myBox.BooksBox.mylanguage.TypesofBooks.completeReference);
+/*var fruits = ["apple" , "banana" ,  "orange"]
+
+//console.log(myBox.BooksBox.mylanguage.TypesofBooks.completeReference);
+fruits.pop()
+fruits.unshift("MyFruits")
+fruits.push("Mango")
+fruits.shift()
+console.log(fruits);
+*/
+
+//var fruits = ["apple1" , "apple2" ,  "appl3"]
+//console.log(fruits.apple2);
+/*
+var fruits = {
+  myFruits : "mango",
+  yourFruit : "banana"
+}
+console.log(fruits);
+fruits.hisFruit = "Apple"
+console.log(fruits);
+
+// deleting property of an object
+delete fruits.myFruits;
+console.log(fruits);*/
+
+/*
+var veg = {myVeg : "patato"}
+console.log(veg.myVeg);
+var pens = ["great", "not great"]
+console.log(pens[1]);
+
+var addAccount = function(operation) {
+  console.log(operation + "done..!");
+}
+addAccount("leg")
+*/
+
+/*
+var eatFruit = function(whatFruit) {
+  console.log('I am having ' + whatFruit);
+  //return 'I am having ' + whatFruit
+}
+eatFruit("Mango");
+*/
+
+var veg = {
+  action : function(what){
+      console.log(what + " Eating");
+  },
+  addWorkout : function(workout, timing){
+    this[workout] = timing;
+  }
+}
+veg.addWorkout("cycling", "7:am")
+veg.addWorkout("jogging", "6:am")
+
+console.log(veg);
+
+/*veg.workout = function(){
+  console.log("gym");
+}
+console.log(veg.action("Biryani"));
+console.log(veg.workout());
+*/
