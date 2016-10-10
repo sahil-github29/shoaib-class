@@ -1,4 +1,4 @@
-var myBooks = ["Great Exception", "PHP", "JAVA"]
+/*var myBooks = ["Great Exception", "PHP", "JAVA"]
 
 var myBox = {
   RedBox:["height =8cm", "width= 12cm", "length=15cm"],
@@ -77,7 +77,7 @@ var eatFruit = function(whatFruit) {
   //return 'I am having ' + whatFruit
 }
 eatFruit("Mango");
-*/
+
 
 var veg = {
   action : function(what){
@@ -92,9 +92,109 @@ veg.addWorkout("jogging", "6:am")
 
 console.log(veg);
 
-/*veg.workout = function(){
+veg.workout = function(){
   console.log("gym");
 }
 console.log(veg.action("Biryani"));
 console.log(veg.workout());
+
+
+
+//function
+function sum(a){
+  console.log(a*a*a   +  " cube");
+}
+sum(3)
+
+
+
+
+
+var box={
+ height:12,vol:249,
+ book:["red","blue","black","yello"],
+  mohan:function(a,b){
+    //console.log("this is cube=" + a);
+
+
+  }
+
+  //red:44
+}
+box.mohan("mohan",rahul)
+console.log(box);
+
+
+
+
+
+
+var veg = {
+  //action : function(what){
+      //console.log(what + " Eating");
+  //},
+//hello:75875585,
+  addWorkout : function(workout, timing ,date){
+    this[workout] = timing,date;
+  }
+}
+veg.addWorkout("cycling", "7:am","23aug")
+veg.addWorkout("jogging", "6:am","24aug")
+
+console.log(veg);
+/*
+
+var man={
+  mangoMan:function (a,b) {
+
+this[a]=b;
+  }
+}
+man.mangoMan("rahul","mohan")
+console.log(man);
+
+************************************************************************************
+var man={
+
+  rahul:4,  mohan:4,
+  class1:["javed","rakesh","sahil","mtt"]
+}
+//console.log(man.class1);
+man.class1.push("shoaib");
+console.log(man.class1);
+*****************************************************************************************
+
+var Pbox={
+  height:3,
+  width:44,
+  vol:546,
+  destination1:"mango",
+
+  [# of  steps]:2,
+
+  for (var i = 1; i < Pbox["# of  steps"]; i++) {
+    console.log(Pbox["destination" + i ]);
+  }
+}
+
 */
+
+function addCritter(container,name,type,species,length) {
+
+  container[name] ={type:type,species:species,length:length};
+
+}
+
+var aquarium = {
+Nemo:{type:"fish",species:"clownfish",length:3.4},
+Dory:{type:"fish",species:"clownfish",length:5.7}
+Marlin:{type:"fish",species:"clownfish",length:4.4},
+peach:{type:"fish",species:"starfish",length:3.4}
+addCritter:function (name,type,species,length) {
+  this[name] ={type:type,species:species,length:length};
+
+}
+}
+
+aquarium.addCritter("Bubbles","fish","yellow tong",5.6);
+console.log(aquarium);
