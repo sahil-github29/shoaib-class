@@ -177,24 +177,99 @@ var Pbox={
   }
 }
 
-*/
 
-function addCritter(container,name,type,species,length) {
 
-  container[name] ={type:type,species:species,length:length};
+function addCritter(name, type, species, length) {
+
+    container[name] = {
+        type: type,
+        species: species,
+        length: length
+    };
 
 }
 
 var aquarium = {
-Nemo:{type:"fish",species:"clownfish",length:3.4},
-Dory:{type:"fish",species:"clownfish",length:5.7}
-Marlin:{type:"fish",species:"clownfish",length:4.4},
-peach:{type:"fish",species:"starfish",length:3.4}
-addCritter:function (name,type,species,length) {
-  this[name] ={type:type,species:species,length:length};
+    Nemo: {
+        type: "fish",
+        species: "clownfish",
+        length: 3.4
+    },
+    Dory: {
+        type: "fish",
+        species: "clownfish",
+        length: 5.7
+    },
+    Marlin: {
+        type: "fish",
+        species: "clownfish",
+        length: 4.4
+    },
+    peach: {
+        type: "fish",
+        species: "starfish",
+        length: 3.4
+    },
+    addCritter: function(name, type, species, length) {
+        this[name] = {
+            type: type,
+            species: species,
+            length: length
+        };
 
-}
+    }
 }
 
-aquarium.addCritter("Bubbles","fish","yellow tong",5.6);
+aquarium.addCritter("Bubbles", "fish", "yellow tong", 5.6);
 console.log(aquarium);
+*/
+
+/******************************ARRAY****************
+
+var sub =["rahul","sharma","shoaib ","diya "]
+console.log(sub.shift());
+console.log(sub);
+
+var sub =["rahul","sharma","shoaib ","diya "]
+console.log(sub.slice(1,3));
+console.log(sub);
+
+
+
+
+var shoe ={size: 4,gender:"man",construction:"slipper"};
+var magicShoe = Object.create( shoe );
+console.log( magicShoe );
+
+*/
+var factory ={
+      size:6,
+      gender:"woman",
+      construction:"slipper"
+}
+
+var reebok=Object.create(factory);
+    console.log(reebok);
+    reebok.sport = "air show"
+    reebok.travelAction = "comfrot"
+    reebok.size = "All size"
+    console.log(reebok);
+var nike=Object.create(factory);
+    console.log(reebok);
+    nike.sport = "shoe"
+    nike.travelAction = "comfrot"
+    nike.size = "INDIAN size"
+        console.log(nike);
+//Object.prototype.isPrototypeOf(reebok);
+//console.log(reebok);
+var factory2 = { size: undefined, gender:undefined,construction:undefined};
+function Reebok(shoeSize,shoeColor,forGender,constructStyle) {
+    this.size = shoeSize;
+    this.color =shoeColor;
+    this.gender =  forGender;
+    this.construction = constructStyle;
+    this.putOn = function () { alert("shoe's on dood!");};
+    this.takeOff = function () {alert("what's that smell?");};
+}
+    var shoe = new Reebok(10,"blue","woman","filipflop");
+    console.log(shoe);
