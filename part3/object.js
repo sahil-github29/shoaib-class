@@ -179,22 +179,80 @@ var Pbox={
 
 */
 
-function addCritter(container,name,type,species,length) {
+function addCritter(container, name, type, species, length) {
 
-  container[name] ={type:type,species:species,length:length};
+    container[name] = {
+        type: type,
+        species: species,
+        length: length
+    };
 
 }
 
 var aquarium = {
-Nemo:{type:"fish",species:"clownfish",length:3.4},
-Dory:{type:"fish",species:"clownfish",length:5.7}
-Marlin:{type:"fish",species:"clownfish",length:4.4},
-peach:{type:"fish",species:"starfish",length:3.4}
-addCritter:function (name,type,species,length) {
-  this[name] ={type:type,species:species,length:length};
-
+    Nemo: {
+        type: "fish",
+        species: "clownfish",
+        length: 3.4
+    },
+    Dory: {
+        type: "fish",
+        species: "clownfish",
+        length: 5.7
+    },
+    Marlin: {
+        type: "fish",
+        species: "clownfish",
+        length: 4.4
+    },
+    peach: {
+        type: "fish",
+        species: "starfish",
+        length: 3.4
+    },
+    addCritter: function(name, type, species, length) {
+        this[name] = {
+            type: type,
+            species: species,
+            length: length
+        };
+    }
 }
+
+aquarium.addCritter("Bubbles", "fish", "yellow tong", 5.6);
+//console.log(aquarium);
+
+/*prototype.countAll = function(letter) {
+  var letterCount = 0;
+  for(var i =0; i < this.length; i++) {
+    if(this.charAt(i).toUpperCase() == letter.toUpperCase()) {
+      letterCount++;
+    }
+  }
+  return letterCount
+};
+
+var str = "This is my first great experience in JavaScript";
+var fruit = "this is what i liked";
+console.log(str.countAll("z"))
+console.log(fruit.countAll("d"))
+*/
+function Shoe(shoeSize, shoeColor, forGender, constructStyle) {
+  this.size = shoeSize;
+  this.color = shoeColor;
+  this.gender = forGender;
+  this.construction = constructStyle;
+}
+Shoe.prototype = {
+  putOn : function() {
+    alert('Shoes on dood!');
+  },
+  takeOff : function() {
+    alert("oh, what's that smell");
+  }
 }
 
-aquarium.addCritter("Bubbles","fish","yellow tong",5.6);
-console.log(aquarium);
+var beachShoe = new Shoe(10, "blue", "women", "flipflop")
+beachShoe.straps = 2;
+console.log(beachShoe);
+console.log(Shoe.prototype.putOn.valueOf())
