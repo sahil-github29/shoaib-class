@@ -2,12 +2,35 @@
 <html>
 <head>
 <title>Title of the document</title>
+<script src="part3/object.js"></script>
 </head>
 
 <body>
+
+  <div id="data">
+
+  </div>
+
+  <script>
+  var table = "<table border='1'>"
+  for (fruit in fruits) {
+
+      table += `<tr><td>` + fruits[fruit]["apple"] + `</td></tr>`;
+  }
+  //console.log(table);
+  table += "</table>";
+  document.getElementById("data").innerHTML = table;
+  </script>
+
+
+
+
+
 <!--<script src="part1.js"></script>-->
 <!--<script src="part2.js"></script>-->
-<script src="part3/object.js"></script>
+
+
+
 </body>
 
 </html>

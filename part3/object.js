@@ -258,9 +258,3 @@ beachShoe.straps = 2;
 //console.log(Shoe.prototype.putOn.valueOf())
 
 var fruits = JSON.parse(`[{"apple" : "100", "mango" : "50"}, {"apple" : "10", "mango" : "50"}]`);
-console.log("<table>");
-for (fruit in fruits) {
-
-    console.log("<tr><td>"fruits[fruit]["apple"]</td></tr>);
-}
-console.log("</table>");
