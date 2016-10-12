@@ -260,7 +260,7 @@ var nike=Object.create(factory);
     nike.travelAction = "comfrot"
     nike.size = "INDIAN size"
         console.log(nike);
-//Object.prototype.isPrototypeOf(reebok);
+console.log("Reebok : " + Object.prototype.isPrototypeOf(reebok));
 //console.log(reebok);
 var factory2 = { size: undefined, gender:undefined,construction:undefined};
 function Reebok(shoeSize,shoeColor,forGender,constructStyle) {
@@ -273,3 +273,26 @@ function Reebok(shoeSize,shoeColor,forGender,constructStyle) {
 }
     var shoe = new Reebok(10,"blue","woman","filipflop");
     console.log(shoe);
+
+/*var d;
+
+function scope1(){
+  var z;
+  console.log();
+}
+function scope2(){
+  console.log(a);
+  var y = function() {
+        var a
+  };
+}*/
+
+(function a() {
+  console.log("iffi calls itself");
+})();
+
+var myBox = 45;
+var MyTable = 60
+myBox = 60
+console.log(myBox);
+console.log(MyTable);
