@@ -265,3 +265,4 @@ for (fruit in fruits) {
 }
 console.log("</table>");
 console.log("fkasfagsl");
+console.log("kguk");
