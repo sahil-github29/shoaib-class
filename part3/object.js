@@ -177,7 +177,7 @@ var Pbox={
   }
 }
 
-*/
+
 
 function addCritter(container, name, type, species, length) {
 
@@ -236,7 +236,7 @@ var str = "This is my first great experience in JavaScript";
 var fruit = "this is what i liked";
 console.log(str.countAll("z"))
 console.log(fruit.countAll("d"))
-*/
+
 function Shoe(shoeSize, shoeColor, forGender, constructStyle) {
   this.size = shoeSize;
   this.color = shoeColor;
@@ -256,5 +256,12 @@ var beachShoe = new Shoe(10, "blue", "women", "flipflop")
 beachShoe.straps = 2;
 //console.log(beachShoe);
 //console.log(Shoe.prototype.putOn.valueOf())
-
+*/
 var fruits = JSON.parse(`[{"apple" : "100", "mango" : "50"}, {"apple" : "10", "mango" : "50"}]`);
+console.log("<table>");
+for (fruit in fruits) {
+
+    console.log("<tr><td>"fruits[fruit]["apple"]</td></tr>);
+}
+console.log("</table>");
+console.log("fkasfagsl");
