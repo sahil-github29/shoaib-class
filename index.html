@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--  <script src="C:/project/shoaib-class/public/dist/js/bootstrap.min.js"></script>
+  <link href="C:/project/shoaib-class/public/dist/css/bootstrap.min.css">
+-->
 <title>Title of the document</title>
 <script src="part3/object.js"></script>
 </head>
 
 <body>
+
+
+  <table>
+
+
+</table>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    ...
+  </div>
+</nav>
 
   <div id="data">
 
@@ -13,9 +28,10 @@
 
   <script>
   var table = "<table border='1'>"
-  for (fruit in fruits) {
 
-      table += `<tr><td>` + fruits[fruit]["apple"] + `</td></tr>`;
+  <tr><th>id</th></tr>
+  for (fruit in fruits) {
+      table += `<tr><td>` + fruits[fruit]["id"] + `</td></tr>`;
   }
   //console.log(table);
   table += "</table>";
