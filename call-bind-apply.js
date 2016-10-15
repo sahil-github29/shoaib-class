@@ -54,88 +54,55 @@ var addToThis = function (a) {
 
 
 
+// Example of apply
+var obj2 = {num:5};
+var arr = [1, 2, 3];
+console.log(addToThis.apply(obj,arr));
+console.log(addToThis.apply(obj2,arr));
 
-
-
-
-var obj2 ={num:5};
-var arr =[1,2,3];
- console.log(addToThis.apply(obj,arr));
- console.log(addToThis.apply(obj2,arr));
-
-
-
-
-
-
-
-
- var obj ={num:2};
-      var addToThis = function (a,b,c) {
-      return this.num +a + b + c;
-
- };
- var arr =[1,2,3];
- var bound =addToThis.bind(obj);
-
-
- console.dir(bound);
+// making sample function for using bind()
+var obj ={num:2};
+var addToThis = function (a,b,c) {
+    return this.num + a + b + c;
+};
+var arr = [1, 2, 3];
+var bound = addToThis.bind(obj);
+console.dir(bound);
 console.log(bound(1,2,3));
 
-
-
-
-
-
-
-
-
-
-
-
+// making sample function for call() method
 function kill(a) {
-  return this.name + "is not going to " + a +"you";
-
+    return this.name + "is not going to " + a +"you";
 }
-
 var Dog1={
-  name:'Boooboo',
-  legs: 4,
-
+    name : 'Boooboo',
+    legs : 4
 }
-
-
 
 var Dog2={
-  name:'choooboo',
-  legs: 4,
-
+    name:'choooboo',
+    legs: 4
 }
-
-
-
 console.log(kill.call(Dog1,"bite"));
 
-
 function kill(a,b) {
-  return this.name + "is not going to " +  a + "/" + b +  "you";
-
+    return this.name + "is not going to " +  a + "/" + b +  "you";
 }
 
 var Dog1={
   name:'Boooboo',
   legs: 4
-
 }
-
-
 
 var Dog2={
   name:'choooboo',
   legs: 4
-
 }
+console.log(kill.apply(Dog1,["bite","shoo"]));
 
-
-
-console.log(kill.apply(Dog1,["bite","shoo"]);
+console.log("-----------------------\n");
+console.log('you are done');
+setTimeout(function() {
+  console.log("he is done");
+}, 1000)
+console.log("I am done");
