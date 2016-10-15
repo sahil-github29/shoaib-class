@@ -257,12 +257,8 @@ beachShoe.straps = 2;
 //console.log(beachShoe);
 //console.log(Shoe.prototype.putOn.valueOf())
 */
-<<<<<<< HEAD
 var fruits = JSON.parse(`[{"id" : "100", "mango" : "50"}, {"id" : "10", "mango" : "50"}]`);
-=======
 
-var fruits = JSON.parse(`[{"apple" : "100", "mango" : "50"}, {"apple" : "10", "mango" : "50"}]`);
->>>>>>> eae28f618fd314ea43835f1c60cf8d61b6038609
 console.log("<table>");
 for (fruit in fruits) {
 
