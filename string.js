@@ -1,19 +1,12 @@
-/*function reverse(s) {
-  var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o += s[i];
-  return o;
-}
-console.log(reverse("string"));
 
 
 
-var arr = [1,2,3,4,5];
+/*var arr = [1,2,3,4,5];
 var ar = [];
 for (var i = arr.length - 1; i >= 0; i--)
 //console.log(arr[i]);
      ar += arr[i];
-console.log(ar);
+console.log(ar);*/
  //return ar;
 
 //}
@@ -24,16 +17,13 @@ console.log(ar);
 var username = prompt("enter no");
 for (var i = 0; i <=username; i++)
 {
-if ( i%3 == 0) {
-  console.log("multipl of 3 ="+i);
-
+    if ( i%3 == 0) {
+        console.log("multipl of 3 ="+i);
+    }
+    else if (i%5 == 0){
+        console.log("multipl of 5=" +i);
+    }
 }
-//elseif (i%5 == 0){
-                                         //problem
-  //console.log("multipl of 5=" +i);
-//}
-}
-
 
 /*
 //Array
@@ -182,11 +172,11 @@ var n = str.search(/home/g);
 */
 
 
-     var reverseArry =  prompt("enter no");
+  /*   var reverseArry =  prompt("enter no");
      var ar = [];
      var index = arr.indexOf(5);
 for (var i =index; i >= 0; i--)
     //console.log(a);
      ar += arr[i];
-     console.log(ar);
+     console.log(ar);*/
       //return ar;
