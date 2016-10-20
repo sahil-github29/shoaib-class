@@ -180,3 +180,11 @@ for (var i =index; i >= 0; i--)
      ar += arr[i];
      console.log(ar);*/
       //return ar;
+
+var oriArr = [1,2,3,4,5];
+var oriArrLen = oriArr.length-1
+var revArray = []
+for( var i=oriArrLen; i >= 0 ; i--) {
+  revArray.push(oriArr[i])
+}
+console.log(revArray);

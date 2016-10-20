@@ -259,9 +259,11 @@ beachShoe.straps = 2;
 */
 var fruits = JSON.parse(`[{"apple" : "100", "mango" : "50"}, {"apple" : "10", "mango" : "50"}]`);
 
-console.log("<table>");
+var table  = "<table border='1'>";
 for (fruit in fruits) {
 
-    ("<tr><td>" + fruits[fruit]["apple"] + "</td></tr>");
+    table += "<tr><td>" + fruits[fruit]["apple"] + "</td></tr>";
 }
-console.log("</table>");
+table  += "</table>";
+
+document.getElementById('mytable').innerHTML = table;
