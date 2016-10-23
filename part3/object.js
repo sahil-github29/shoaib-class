@@ -293,7 +293,7 @@ var map = ([
 var table  = "<table border='1'>";
 for (table1 in map) {
     //table += "<tr><th>" + map + "</th></tr>"
-    table += "<tr><th>" + map [table1]["homeTeam"] + "</th></tr>";
+    table += "<tr><th>" + homeTeam+ "</th></tr>";
     //table += "<tr><th>" + map [table1]["awayTeam"] + "</th></tr>";
     table += "<tr><td>" + map [table1]["markerImage"] + "</td></tr>";
     table += "<tr><td>" + map [table1]["information"] + "</td></tr>";
@@ -303,9 +303,3 @@ for (table1 in map) {
 table  += "</table>";
 
 document.getElementById('mytable').innerHTML = table;
-
-
-
-
-var null;
-console.log(typeOf null);
