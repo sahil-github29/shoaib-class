@@ -19,6 +19,10 @@ for (var i = 0; i <=username; i++)
 {
     if ( i%3 == 0) {
         console.log("multipl of 3 ="+i);
+        //console.log("Total multipl=" ++i);
+
+        console.log(text);
+
     }
     else if (i%5 == 0){
         console.log("multipl of 5=" +i);
@@ -178,7 +182,7 @@ var n = str.search(/home/g);
 for (var i =index; i >= 0; i--)
     //console.log(a);
      ar += arr[i];
-     console.log(ar);*/
+     console.log(ar);
       //return ar;
 
 var oriArr = [1,2,3,4,5];
@@ -188,3 +192,4 @@ for( var i=oriArrLen; i >= 0 ; i--) {
   revArray.push(oriArr[i])
 }
 console.log(revArray);
+*/

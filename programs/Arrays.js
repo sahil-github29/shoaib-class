@@ -1,5 +1,7 @@
 // Array
 var fruits = ['apple', 'orange', 'kiwi'];
+var numbers = [10, 20, 2, 3, 0, 500];
+
 
 // Adding new elements to the end of
 // the array:
@@ -55,17 +57,6 @@ show_array(numbers);
 
 
 
-//using pop and shift
-fruits.pop();//last element is remove
-fruits.shift();// 1st element is remove
-console.log(fruits);
-*/
-
-
-
-//var fruits = ['apple', 'orange', 'banana'];
-var numbers = [10, 20, 2, 3, 0, 500];
-
 // Sort in reverse alphabetical order.
 fruits.sort(function(a, b) {
     if(a > b) {
@@ -92,9 +83,16 @@ numbers.sort(function(a, b) {
     }
 });
 
-// We defined show array earlier.
+console.log(fruits);
+console.log(numbers);
 
 show_array(fruits);
 show_array(numbers);
+
+
+
+//using pop and shift
+fruits.pop();//last element is remove
+fruits.shift();// 1st element is remove
 console.log(fruits);
-console.log(numbers);
+*/
