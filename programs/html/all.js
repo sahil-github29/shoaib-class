@@ -12,7 +12,7 @@ if (img < 0){
    img=imglength;
 }
 
-    document.getElementById("sliderImage").src = images[img],x;
+    document.getElementById("sliderImage").src = images[img];
     //document.getElementById("caption").innrHTML=caption[img];
 return false;
 }
