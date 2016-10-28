@@ -10,6 +10,11 @@ git push -u origin master
 
 github password
 
+
+javascript-class
+sahil2238
+https://javascript-class.bitrix24.com/company/personal/user/1/photo/
+
 username : shoaib-github
 password : shoaib432
 email : shohaibkhan1@gmail.com
