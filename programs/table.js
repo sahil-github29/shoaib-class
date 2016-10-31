@@ -746,51 +746,34 @@ var map = JSON.parse(`[
 	}
 ]`);
 
-
-
-
-
-
-
-
-
-
-
-
-var table  = "<table border='1'>";
-
+var table = "<table border='1'>";
 
 table += "<tr><td>job_purpose</td><td>job_details</td><td>requestedFor</td><td>owner</td><td>date_updated</td><td>date_created</td></tr>"
 
 for (table1 in map) {
-	table += "<tr>";
+    table += "<tr>";
     //table += "<tr><th>" + map + "</th>>"
-  //  table += "<tr><th>" + + "</th></tr>";
-    table += "<td>" + map [table1]["job_purpose"] + "</td>";
-    table += "<td>" + map [table1]["job_purpose"] + "</td>";
-    table += "<td>" + map [table1]["requestedFor"] + "</td>";
-		table += "<td>" + map [table1]["owner"] + "</td>";
-		table += "<td>" + map [table1]["date_updated"] + "</td>";
-    table += "<td>" + map [table1]["date_created"] + "</td></tr>";
+    //  table += "<tr><th>" + + "</th></tr>";
+    table += "<td>" + map[table1]["job_purpose"] + "</td>";
+    table += "<td>" + map[table1]["job_purpose"] + "</td>";
+    table += "<td>" + map[table1]["requestedFor"] + "</td>";
+    table += "<td>" + map[table1]["owner"] + "</td>";
+    table += "<td>" + map[table1]["date_updated"] + "</td>";
+    table += "<td>" + map[table1]["date_created"] + "</td></tr>";
 
 }
-table  += "</table>";
+table += "</table>";
 
-var output = "default data";
-console.log(typeof myFunction());
-alert (console.log(myFunction()));
-if ( myFunction() == "table") {
-
- output = table;
-
-}
-
-
+var RefDiv = document.getElementById('mytable')
 function myFunction() {
-    return document.getElementById("mySelect").value;
-	}
-
-console.log(myFunction());
-
-
-document.getElementById('mytable').innerHTML = output;
+    var output = ""
+    var tableOutput = document.getElementById("mySelect").value;
+	  if (tableOutput == "table") {
+        output = table;
+    } else if (tableOutput == "json") {
+        output = "This is JSON data";
+    } else {
+        output = "default data";
+    }
+    RefDiv.innerHTML = output;
+} 
