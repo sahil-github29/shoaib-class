@@ -778,10 +778,11 @@ table  += "</table>";
 
 var output = "default data";
 console.log(typeof myFunction());
-console.log(myFunction());
+alert (console.log(myFunction()));
 if ( myFunction() == "table") {
 
  output = table;
+
 }
 
 
