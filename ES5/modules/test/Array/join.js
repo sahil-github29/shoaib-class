@@ -4,12 +4,12 @@ syntax: array.join(separator);
 */
 
 //var arr = new Array("First","Second","Third");
-var arr = ["First","Second","Third"];
-var str = arr.join();
-document.write("str : " + str );
-var str = arr.join(": ");
-document.write("<br />str : " + str );
-var str = arr.join(" + ");
-document.write("<br />str : " + str );
-console.log(typeof str);
-console.log(typeof arr);
+   var arr = ["First","Second","Third"];
+   var str = arr.join();
+   document.write("str : " + str );
+   var str = arr.join(": ");
+   document.write("<br />str : " + str );
+   var str = arr.join(" + ");
+   document.write("<br />str : " + str );
+   console.log(typeof str);
+   console.log(typeof arr);

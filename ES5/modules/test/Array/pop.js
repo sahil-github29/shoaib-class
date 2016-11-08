@@ -7,9 +7,9 @@
  syntax :Array.shift();
   */
 
-//var arr = new Array( "apple", "mango", "banana", "ornage", );
-var arr = [ "apple", "mango", "banana", "ornage", ];
-document.write(arr +"<br/>");
-arr.shift();//first element
-arr.pop();//last element
-document.write(arr);
+  //var arr = new Array( "apple", "mango", "banana", "ornage", );
+  var arr = [ "apple", "mango", "banana", "ornage", ];
+  document.write(arr +"<br/>");
+  arr.shift();//first element
+  arr.pop();//last element
+  document.write(arr);

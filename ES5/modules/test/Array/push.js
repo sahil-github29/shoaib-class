@@ -6,7 +6,7 @@
  */
 
 
-var arr = [10, 20, 30, "hello" ];
+   var arr = [10, 20, 30, "hello" ];
    document.write(arr);
    arr.push("shoaib");
    document.write(arr);
