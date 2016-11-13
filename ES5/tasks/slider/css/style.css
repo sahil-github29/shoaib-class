@@ -1,0 +1,44 @@
+#slider {
+	height: 200px;
+	width: 300px;
+	border: 1px solid #ccc;
+	padding-top: 15px;
+	text-align: center;
+
+}
+#prev {
+	padding: 5px;
+	font-family: verdana;
+	margin-left: 5px;
+	width: 50px;
+	display: inline-block;
+}
+#next {
+	padding: 5px;
+	font-family: verdana;
+	margin-left: 5px;
+	width: 50px;
+	display: inline-block;
+}
+#index {
+	padding: 5px;
+	font-family: verdana;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+
+}
+#pagination {
+	padding: 5px;
+	font-family: verdana;
+	width: 290px;
+	border: 1px solid #ccc;
+	clear: both;
+	display:block;
+	position: relative;
+
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
