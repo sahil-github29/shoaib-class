@@ -6,7 +6,7 @@ The prototype property allows you to add properties and methods to any object
 */
 
 
- function Book(title,author,store) {
+ /*function Book(title,author,store) {
       this.title = title;
       this.store = store;
       this.author = author;
@@ -22,3 +22,8 @@ The prototype property allows you to add properties and methods to any object
    document.write("Book author is : " + myBook.author + "<br>");
    document.write("Book price is : " + myBook.price + "<br>");
    document.write("Book name is : " + myBook.name + "<br>");
+*/
+
+var fruits = ["apple", "orange"]
+
+console.log(fruits)
