@@ -1,0 +1,19 @@
+{
+  "name": "shoaib-class",
+  "version": "1.0.0",
+  "description": "shoaib class learning ES6 with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil-github29/shoaib-class.git"
+  },
+  "author": "Mohd Sahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahil-github29/shoaib-class/issues"
+  },
+  "homepage": "https://github.com/sahil-github29/shoaib-class#readme"
+}
