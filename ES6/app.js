@@ -8,4 +8,4 @@ http.createServer(function(req, res) {
 
   res.end()
 }).listen(8080)
-console.log('listening on port 8080');
+console.log('listening on localhost:8080');
