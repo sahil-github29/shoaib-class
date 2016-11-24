@@ -1,10 +1,11 @@
 var http = require('http')
-var useLet = require('./let/let.js');
-var emp = require('class.js');
+//var useLet = require('./let/let.js');
+//var emp = require('class.js');
+var abst = require('./abst.js');
 
 
 http.createServer(function(req, res) {
-  res.write("We are using ES6" + "\n" + emp.work())
+  res.write("We are using ES6" + "\n" + abst.doWork())
   // use of let
   //console.log(useLet("test"))
 

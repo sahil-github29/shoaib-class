@@ -14,8 +14,8 @@ var count = 1;
 // displaying images index
 
 for (var i = 0; i <= imgLen; i++) {
-        
-	displayNum += "<a href='#' onClick='displayImg(this.innerHTML)'><span id='"+i+"'> " + count++ + "</span> </a>"
+
+	displayNum += "<a href='#' onClick='displayImg(this.innerHTML)'> " + count++ + "</a>"
 }
 
 indexDiv.innerHTML = displayNum
@@ -24,7 +24,7 @@ indexDiv.innerHTML = displayNum
 // display Image
 function displayImg(i){
 	--i
-	imgTag.src = path + "/" + img[i]  
+	imgTag.src = path + "/" + img[i]
 	curImg = i
 }
 
@@ -44,6 +44,3 @@ function next() {
 		imgTag.src = path + "/" + img[curImg]
 	}
 }
-
-
-
