@@ -3,7 +3,7 @@ var http = require('http')
 var em = require('./class.js');
 
 http.createServer(function(req, res) {
-  res.write("We are using ES6" + "\n" + em.work())
+  res.write("We are using ES6" + "\n" + em.chaekIdentity())
   // use of let
   //console.log(useLet("test"))
 

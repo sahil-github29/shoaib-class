@@ -1,4 +1,4 @@
-   function sayHello() {
+var a = sayHello => {
        document.write( "Hello there!" );
        return "hello";
    }
