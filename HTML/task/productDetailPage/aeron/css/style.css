@@ -1,12 +1,11 @@
 body {
-    background-image: url("chr.jpg");
+    background-image: url("../img/chr.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: 400px;
     color: gray;
 }
-
-button{
+button {
     border-radius: 10px;
     background: red;
     padding: 20px;
@@ -17,31 +16,28 @@ button{
     font-size: 13px;
 }
 .button {
-    background-color: #4CAF50; /* Green */
     border-radius: 40px;
     color: white;
-    padding: 15px;
     width: 40px;
     height: 40px;
     text-align: center;
-    font-size: 16px;
     margin: 4px 2px;
 }
 
 .button1 {
-    background-image: url("chr.jpg");
+    background-image: url("../img/chr.jpg");
     color: black;
     border: 2px solid #000;
 }
 
 .button2 {
-    background-image: url("chr.jpg");
+    background-image: url("../img/chr.jpg");
     color: black;
     border: 2px solid #000;
 }
 
 .button3 {
-    background-image: url("chr.jpg");
+    background-image: url("../img/chr.jpg");
     color: black;
     border: 2px solid #000;
 }
