@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+<head>
+<title> Document</title>
+<script type="text/javascript" src = "../dist/js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$("document").ready(function () {
+   $("p[id]").css("border","3px solid red");
+   $("h5[class]").css("border","3px dotted red");
+   $("p[class]").css(" border","3px dashed red");
+   //$("h5[class^=a]").css("border","3px solid blue");
+  });
+</script>
+
+<style type="text/css"></style>
+</head>
+<body>
+ <ul id="list1">
+  <li class="a">item 1</li>
+  <li class="b">item 2</li>
+  <li class="a">item 3</li>
+  <li class="b">item 4</li>
+</ul>
+<h5 class="a">headline 1</h5>
+<h5 id="b">headline 2</h5>
+<h5 class="a">headline 3</h5>
+<h5 id="b">headline 4</h5>
+<p class="a"> This is paragraph 1</p>
+<p id="b"> This is paragraph 2</p>
+<p class="a"> This is paragraph 3</p>
+<p id="b"> This is paragraph 4</p>
+</body>
+</html>

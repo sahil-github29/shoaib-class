@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Table</title>
+    <script type="text/javascript" src="../dist/js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+$("document").ready(function () {
+  $("tr:even").css("backgroundColor","red");
+  //$("tr:even").css("border", "3px solid red");
+  //$("tr:nth-child(even)").css("background-color:red");
+  //$("tr:nth-child(even)").css("background-color:;")
+});
+</script>
+<style type="text/css">
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+</style>
+</head>
+<body>
+<h1>Using jQuery table</h1>
+<table id="theList">
+	<thead>
+	<tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>tax</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>Milk</td>
+      <td>1.99</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Eggs</td>
+      <td>2.29</td>
+      <td>1.99</td>
+
+  </tr>
+  <tr>
+      <td>Butter</td>
+      <td>3.49</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Bread</td>
+      <td>0.99</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Pasta</td>
+      <td>1.19</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Honey</td>
+      <td>4.39</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Cookies</td>
+      <td>2.99</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Apples</td>
+      <td>0.59</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Sugar</td>
+      <td>1.78</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Pepper</td>
+      <td>1.56</td>
+      <td>1.99</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
