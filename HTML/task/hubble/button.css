@@ -1,0 +1,39 @@
+#hub {border:none;
+	margin: 100px;
+
+
+width: 900px;
+height: 470px;
+}
+
+#a{ position: relative;
+	background-color: #2F4F4F;
+	padding: 12px
+
+ }
+
+#hd {color: white;
+	font-family: sans-serif;
+}
+#b { position: absolute;
+    top: 5px;
+    right: 0;
+ p { font-size: 4px }
+
+button{
+  border-radius: 10px;
+    background: red;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+}
+footer {
+    color: black;
+    background-color: #DCDCDC;
+    clear: left;
+    text-align: center;
+}
