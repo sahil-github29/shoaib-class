@@ -3,7 +3,7 @@ var map = JSON.parse(`[
 		"_id": "56fce507fe4b3824494ebefa",
 		"job_purpose": "test justification",
 		"job_details": "VM requested  in bng_ccp_pod1",
-		"requestedFor": "vinodkm",
+		"requestedFor": "",
 		"owner": "vinodkm",
 		"date_updated": "2016-03-31T08:51:19.584Z",
 		"date_created": "2016-03-31T08:51:19.584Z",
@@ -768,13 +768,7 @@ var RefDiv = document.getElementById('mytable')
 function myFunction() {
     var output = ""
     var tableOutput = document.getElementById("mySelect").value;
-	  if (tableOutput == "table") {
-        output = table;
-    } else if (tableOutput == "json") {
-        output = map[table1]["job_purpose"];
-				alert(output);
-    } else {
-        output = "default data";
-    }
+		console.log(tableOutput);
+
     RefDiv.innerHTML = output;
 }

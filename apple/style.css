@@ -1,0 +1,70 @@
+#nv {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#a {
+    float: left;
+}
+
+#a a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#a a:hover {
+    background-color: #111111;
+}
+#outbox
+{
+
+}
+#sliderbox
+{  position: relative;
+   width: 3032px;
+   animation-name: none;
+   animation-duration: 5s;
+}
+#sliderbox img
+{
+float: left;
+
+}
+@keyframes none {
+  0%
+  {
+    left: 0;
+  }
+100%
+{
+  left: -3032px;
+}
+}
+#bar
+{  position: relative;
+   animation-name: none;
+   animation-duration: 5s;
+   width: 1264px;
+}
+#bar img
+{
+float: left;
+height: 100px;
+border: 1px solid gray;
+margin: 1px;
+}
+nav{
+  background-color: red;
+}
+#as{
+
+}
+#bs {
+  list-style-type: none;
+border: 1px solid red;}
