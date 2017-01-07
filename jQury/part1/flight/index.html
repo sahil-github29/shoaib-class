@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../../filter/dist/js/jquery-3.1.1.js"></script>
+<script>
+$(document).ready(function(){
+    $(".btn1").click(function(){
+			var price = $('<p> paid $ 339.67 on january 14. 2017</p>');
+			$(this).after(price);
+		    });
+    $(".btn2").click(function(){
+			var price = $('<p>Destination: Honolulu,Hi</p><p>Depart Date :Feburary 20,2027 at 9:00</p><p>Flight Number : 815</p>');
+			$(this).after(price);
+    });
+});
+</script>
+</head>
+<style>
+div{color: white;
+	border: 1px solid white;
+	width: 500px;
+	height: 450px;
+	padding: 40px;
+}
+
+#h{color: gray;}
+.btn2{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+h2,h3 p{font-family: Arial, Helvetica, sans-serif;}
+body{background-color: black;}
+	</style>
+<body>
+<div>
+	<h3>jQuery Air Atlantic - vacation confirmation</h3>
+	<h2>confirmatoin</h2>
+	<h2 id="h">Hawaiian vacation</h2>
+	<button class="btn1">PRICE</button><br>
+
+  <button class="btn2">FLIGHT DETAILS</button>
+
+</div>
+</body>
+</html>
