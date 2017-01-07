@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>This</title>
+<script type="text/javascript" src="../../filter/dist/js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+      $('button').on('click',function () {
+        var price = $('<p> From $ 339.67</p>');
+      $(this).closest(".promo").appand(price);
+      $(this).remove();
+    });
+});
+</script>
+<style>
+h1,h2{ text-align:center;}
+#per{text-align:center;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center"> Where do you want to go?</h1>
+<h2>Travel Destinations</h2>
+<p id="per"> Plan your next adventure</p><br>
+<ul id="destinations">
+  <li class="pro">
+    <h3>Amzone</h3>
+    <button> Get price</button>
+  </li>
+  <li>Paris</li>
+  <li class="promo">Rio</li>
+</ul>
+</body>
+</html>

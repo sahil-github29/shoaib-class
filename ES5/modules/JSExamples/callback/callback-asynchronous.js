@@ -1,4 +1,3 @@
-
   /*
   Asynchronous : Callback function
   */
@@ -36,3 +35,48 @@ for(var k=0; k<3; k++) {
         },1000);
     })(k);
 }
+
+  /*
+  *********************************************************************************
+  */
+
+
+
+
+    /*
+
+
+    /*
+    Asynchronous : Callback function
+
+    var arr = new Array( 10, 20, 30 ,"hello" );
+    //var arr = [10, 20, 30, "hello" ];
+    (function () {
+      setTimeout(function() {
+        document.write("arr.length is:" + arr.length);
+        console.log(arr.length);
+      },3000);
+  })(arr.length);
+
+
+  console.log('i am done');
+  // console.log(mycallbackData); // undefined
+
+
+  // asynchronous inside loop
+  for(var k=0; k<3; k++) {
+      (function(k) {
+          setTimeout(function() {
+            document.write( k );
+
+              console.log(k);
+          },2000);
+      })(k);
+  }
+
+
+
+
+
+
+    */

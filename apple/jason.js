@@ -52,25 +52,4 @@ var aple = JSON.parse(`[{"shopAndLearn":"Mac",
 "AppleStore": "Order_Status"
 }
 ]`);
-
-
-var table = "<table border='1'>";
-
-table += "<tr><td>shopAndLearn</td><td>AppleStore</td><td>forEducation</td><td>forBusiness</td><td>Account</td><td>AppleValues</td><td>AboutApple</td></tr>"
-
-for (table1 in aple) {
-    table += "<tr>";
-    table += "<td>" + aple[table1]["shopAndLearn"] + "</td>";
-    table += "<td>" + aple[table1]["AppleStore"] + "</td>";
-    table += "<td>" + aple[table1]["forEducation"] + "</td>";
-    table += "<td>" + aple[table1]["forBusiness"] + "</td>";
-    table += "<td>" + aple[table1]["Account"] + "</td>";
-    table += "<td>" + aple[table1]["AppleValues"] + "</td>"
-    table += "<td>" + aple[table1]["AboutApple"] + "</td></tr>";
-
-}
-table += "</table>";
-
-var RefDiv = document.getElementById('mytable')
-    var output = ""
-    var tableOutput = document.getElementById("mytable").InnerHTML = table;
+console.log(aple);

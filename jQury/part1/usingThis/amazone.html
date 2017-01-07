@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Amazone</title>
+<script type="text/javascript" src="../../filter/dist/js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+      $('.st').on('click',function () {
+        var price = $('<p> From $ 339.67</p>');
+      $(this).after(price).hide();
+      $(this).slideDown()
+      $(this).remove();
+    });
+    $('.nd').on('click',function () {
+      var price = $('<p> From $ 600.67</p>');
+    $(this).after(price);
+    $(this).remove();
+  });
+  $('.rd').on('click',function () {
+    var price = $('<p> From $ 500.67</p>');
+  $(this).after(price);
+  $(this).remove();
+ });
+});
+</script>
+<style>
+h1,h2{ text-align:center;}
+#per{text-align:center;}
+div{ background-color:gray;
+  color: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+  margin: 2px;
+}
+ul{list-style-type: none;
+}
+button{ padding:1px;
+margin-left: 15px;
+background-color: green;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center"> Where do you want to go?</h1>
+<h2>Travel Destinations</h2>
+<p id="per"> Plan your next adventure</p><br>
+<ul id="destinations">
+  <div>
+  <li class="pro">
+    <h3>Amzone</h3>
+    <button class="st"> Get price</button>
+  </li>
+</div>
+<div>
+  <li class="sbtn">
+    <h3>Amzone</h3>
+    <button class="nd"> Get price</button>
+  </li>
+</div>
+<div>
+  <li class="nbtn">
+    <h3>Amzone</h3>
+    <button class="rd"> Get price</button>
+  </li>
+</div>
+</ul>
+</body>
+</html>
